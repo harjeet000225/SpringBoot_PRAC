@@ -1,0 +1,19 @@
+<html xmlns:th="http://www.theymleaf.org/"
+    <meta charset="UTF-8">
+	<title>
+		<h1>
+		Student Data
+		</h1>
+	</title>
+	<body>
+		<table>
+		<tr>
+		<th>Name</th>
+		<th>Score</th>
+		</tr>
+		<tr th:each="Student:${Students}">
+		Name	<td th:text="${Student.name}"></td>
+		Score   <td th:text="${Student.score}"></td>
+		</tr></table>
+		</body>
+</html>

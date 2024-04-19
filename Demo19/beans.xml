@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="https://www.springframework.org/schema/beans"
+       xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="customer" class="com.harjeet.demo.Customer">
+        <!--        Default values set via setters-->
+        <!--        <property name="id" value="1"/>-->
+        <!--        <property name="name" value="Ram"/>-->
+
+        <!--        Default values set via constructors-->
+        <constructor-arg name="id" value="0"/>
+        <constructor-arg name="name" value="Foo"/>
+
+    </bean>
+</beans>
